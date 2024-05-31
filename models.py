@@ -18,7 +18,7 @@ from typing import Optional
 #     SHOPPING = 'shopping'
 #
 # class User:
-#     def init(self,
+#     def __init__(self,
 #                  username: str,
 #                  password: str,
 #                  user_id: Optional[int] = None,
@@ -32,11 +32,11 @@ from typing import Optional
 #         self.status = status.value if status else UserStatus.INACTIVE.value
 #         self.login_try_count = login_try_count or 0
 #
-#     def str(self):
+#     def __str__(self):
 #         return f'{self.role} => {self.username}'
 #
 # class Todo:
-#     def init(self,
+#     def __init__(self,
 #                  title: str,
 #                  user_id: int,
 #                  todo_type: Optional[TodoType] = None):
